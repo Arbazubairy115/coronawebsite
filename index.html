@@ -57,8 +57,8 @@
         let next=document.getElementById("next")
 
         next.onclick=()=>{
-            location.reload();
-            return false;
+            let pro=prompt("Please, Enter The Name Of Country To Get The Covid19 Related To Same","India");
+            pro=pro[0].toUpperCase()+pro.slice(1);
         }
 
         c_name.innerHTML=`Cases in  ${pro}`
