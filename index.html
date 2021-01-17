@@ -48,17 +48,18 @@
 
     <!-- myscript -->
     <script>
-        let pro=prompt("Please, Enter The Name Of Country To Get The Covid19 Related To Same");
+        let pro=prompt("Country Name");
         pro=pro[0].toUpperCase()+pro.slice(1);
+        
+        let next=document.getElementById("next")
         let c_name= document.getElementById("c_name");
         let con_cases= document.getElementById("con_cases");
         let rec_cases= document.getElementById("rec_cases");
         let deaths= document.getElementById("deaths");
-        let next=document.getElementById("next")
 
         next.onclick=()=>{
-            let pro=prompt("Please, Enter The Name Of Country To Get The Covid19 Related To Same","India");
-            pro=pro[0].toUpperCase()+pro.slice(1);
+            location.reload();
+            return false;
         }
 
         c_name.innerHTML=`Cases in  ${pro}`
