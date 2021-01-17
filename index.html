@@ -69,7 +69,7 @@
         return apidata.json();
         }).then((actualdata) => {
             for (i in actualdata.Countries){
-                if(actualdata.Countries[i].Country=="India"){
+                if(actualdata.Countries[i].Country==`${pro}`){
                     con_cases.innerHTML=`Recent No. of Confirmed Cases in ${pro} = ${actualdata.Countries[i].NewConfirmed}`
                     rec_cases.innerHTML=`Recent No. of Recovered Cases in ${pro} = ${actualdata.Countries[i].NewRecovered}`
                     deaths.innerHTML=`Recent No. of Deaths in ${pro} = ${actualdata.Countries[i].NewDeaths}`
